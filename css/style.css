@@ -56,26 +56,30 @@ body {
     font-size: 16px;
     color: gray;
     padding-left: 35px; 
+    font-weight: bold;
 
 }
 
-.side-items-menu > .icon-item {
+.icon-item {
     padding: 15px 20px 15px 35px; /* Ajustamos el padding para que el contenido no se pegue al borde */
     display: flex;
     gap: 20px;
     align-items: center;
     transition: all 0.4s ease-in-out;
     cursor: pointer; 
+    text-decoration: none;
+    color: black;
 }
 
 .icon-item > i{
     font-size: 22px;
-    color: black;
-}
+    color: rgb(71, 71, 71);
 
-.side-items-menu > .icon-item:hover{
+}
+ .icon-item:hover{
     background-color: rgb(216, 209, 209);
     box-shadow: 0px 0px 5px gray;
+    transform: scale(1.1);
 
 }
 
@@ -91,14 +95,7 @@ body {
     border-bottom: 1px solid rgba(228, 220, 220, 0.637);
     
 }
-.sub-items > .icon-item{
-    padding: 15px 20px 15px 35px; /* Ajustamos el padding para que el contenido no se pegue al borde */
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    transition: all 0.4s ease-in-out;
-    cursor: pointer; 
-}
+
 
 .sub-items > .icon-item:hover{
     background-color: rgb(216, 209, 209);
@@ -108,7 +105,7 @@ body {
 .section-user{
     display: flex;
     gap: 20px;
-    padding: 30px 0 0 15px;
+    padding: 30px 0 0 20px;
     
 }
 
@@ -118,13 +115,43 @@ body {
 }
 
 .section-user > .text-user > .welcome-back{
-    font-size: 12px;
+    font-size: 14px;
 
 }
 
 .section-user > .text-user > .name-user{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 19px;
+    color: rgb(71, 71, 71);
+
+}
+
+/* Estilos para los vínculos del menú */
+a.icon-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.icon-item.active {
+    background-color: rgb(216, 209, 209);
+    border-left: 4px solid var(--secondary-color);
+}
+
+/* Contenido principal */
+.main-content {
+    margin-left: 16%;
+    padding: 40px;
+}
+
+.main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.main-content p {
+    font-size: 1.1rem;
+    color: #666;
 }
 
 
