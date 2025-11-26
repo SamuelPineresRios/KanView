@@ -8,41 +8,91 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1>🛋️ KanView</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#seguimiento">Seguimiento</a></li>
-                <li><a href="#admin">Administración</a></li>
-            </ul>
-        </nav>
-    </header>
+<section class="side-bar">
+    <div class="side-cuir">
+        <img src="/imgs/tapiicon.jpeg" alt="">
+        <h3>Tapiceria Cuir</h3>
+    </div>
 
-    <main>
-        <section id="inicio" class="hero">
-            <h2>Bienvenido a Cuir Tapicería</h2>
-            <p>Transparencia y calidad en cada detalle.</p>
-            <button id="btn-track">Rastrear mi Pedido</button>
-        </section>
 
-        <section id="seguimiento" class="tracking-section">
-            <h2>Estado de tu Mueble</h2>
-            <div class="tracking-container">
-                <p>Ingresa tu código de pedido para ver el progreso.</p>
-                <input type="text" id="order-id" placeholder="Ej: PED-1234">
-                <button onclick="trackOrder()">Buscar</button>
-            </div>
-            <div id="tracking-result"></div>
-        </section>
-    </main>
+    <div class="main-items">
+    <p class="side-text-principal">
+        PRINCIPAL</p>
 
-    <footer>
-        <p>&copy; 2025 KanView - Cuir Tapicería</p>
-    </footer>
+    <div class="side-items-menu">
+        <div class="icon-item">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Tablero</span>
+        </div>
 
-    <script src="js/script.js"></script>
+        <div class="icon-item">
+            <i class="fa-solid fa-comments"></i>
+            <span>Chats</span>
+        </div>
+
+        <div class="icon-item">
+            <i class="fa-solid fa-bullseye"></i>
+            <span>Metas Financieras</span>
+        </div>
+
+        <div class="icon-item">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <span>Ventas por canal</span>
+        </div>
+
+        <div class="icon-item">
+            <i class="fa-solid fa-users"></i>
+            <span>Grupos</span>
+       </div>
+
+        <div class="icon-item">
+            <i class="fa-solid fa-camera"></i>
+            <span>Cámaras</span>
+        </div>
+
+        <div class="icon-item">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span>Historial de pedidos</span>
+        </div>
+
+        <div class="icon-item">
+            <i class="fa-solid fa-coins"></i>
+            <span>Finanzas empresariales</span>
+        </div>
+
+
+    </div>
+</div>
+
+
+    <div class="sub-items">
+       <div class="icon-item">
+            <i class="fa-solid fa-gear"></i>
+            <span>Ajustes</span>
+        </div>
+
+<!-- 10. Icono de Soporte -->
+        <div class="icon-item">
+            <i class="fa-solid fa-headset"></i>
+            <span>Soporte</span>
+        </div>
+
+<!-- 11. Icono de Notificaciones -->
+        <div class="icon-item">
+            <i class="fa-solid fa-bell"></i>
+            <span>Notificaciones</span>
+        </div>
+    </div>
+
+    <div class="section-user">
+        <img src="/imgs/tapiicon.jpeg" alt="">
+        <div class="text-user">
+            <p class="welcome-back">Welcome back</p>
+            <p class="name-user">Wilmar Clavijo</p>
+        </div>
+    </div>
+
+</section>
+    
 </body>
 </html>
