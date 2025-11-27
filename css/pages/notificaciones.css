@@ -1,0 +1,150 @@
+/* ===== NOTIFICACIONES ===== */
+
+/* Contenedor principal */
+.notificaciones-container {
+    flex: 1;
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+/* Header */
+.notificaciones-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+}
+
+.notificaciones-header h1 {
+    font-size: var(--font-xl);
+    color: var(--primary-color);
+}
+
+.btn-marcar-leidas {
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.btn-marcar-leidas:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+/* Filtros */
+.notificaciones-filters {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.filter-btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.filter-btn.active {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+/* Lista de notificaciones */
+.notificaciones-list {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 2px 8px var(--shadow-color);
+    overflow: hidden;
+}
+
+.notificacion-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid var(--border-light);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.notificacion-item:hover {
+    background-color: var(--hover-bg);
+}
+
+.notificacion-item.no-leida {
+    background-color: rgba(230, 126, 34, 0.05);
+    border-left: 3px solid var(--secondary-color);
+}
+
+.notificacion-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: var(--border-radius-round);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-lg);
+    flex-shrink: 0;
+}
+
+.notificacion-icon.pedido {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: var(--status-blue);
+}
+
+.notificacion-icon.pago {
+    background-color: rgba(39, 174, 96, 0.2);
+    color: var(--status-green);
+}
+
+.notificacion-icon.alerta {
+    background-color: rgba(223, 0, 0, 0.2);
+    color: var(--status-red);
+}
+
+.notificacion-icon.mensaje {
+    background-color: rgba(230, 126, 34, 0.2);
+    color: var(--status-orange);
+}
+
+.notificacion-content {
+    flex: 1;
+}
+
+.notificacion-titulo {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.notificacion-descripcion {
+    font-size: var(--font-sm);
+    color: var(--text-light);
+}
+
+.notificacion-tiempo {
+    font-size: var(--font-xs);
+    color: var(--text-light);
+    white-space: nowrap;
+}
+
+/* Estado vacío */
+.notificaciones-empty {
+    text-align: center;
+    padding: var(--spacing-xxl);
+    color: var(--text-light);
+}
+
+.notificaciones-empty i {
+    font-size: 60px;
+    margin-bottom: var(--spacing-md);
+    color: var(--border-light);
+}

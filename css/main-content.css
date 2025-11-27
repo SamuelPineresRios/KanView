@@ -1,0 +1,16 @@
+/* ===== MAIN CONTENT (Para páginas internas) ===== */
+.main-content {
+    margin-left: var(--sidebar-width);
+    padding: 40px;
+}
+
+.main-content h1 {
+    font-size: var(--font-title);
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+.main-content p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+}

@@ -1,157 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 
+ * KanView - Main Stylesheet
+ * Este archivo importa todos los módulos CSS
+ */
 
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #e67e22;
-    --text-color: #333;
-    --bg-color: #f4f4f4;
-}
+/* Variables globales y reset */
+@import url('variables.css');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    
-}
-
-.side-bar{
-    width: 16%;
-    height: 100vh;
-    background-color: white;
-
-}
-
-.main-items{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 10px;
-}
-
-.side-cuir{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    gap: 10px;
-}
-
-.side-cuir > h3{
-    font-size: 24px;
-}
-
-.side-cuir > img{
-    width: 45px;
-}
+/* Componentes */
+@import url('sidebar.css');
+@import url('kanban.css');
+@import url('tasks.css');
+@import url('main-content.css');
 
 
-.side-text-principal{
-    font-size: 16px;
-    color: gray;
-    padding-left: 35px; 
-    font-weight: bold;
-
-}
-
-.icon-item {
-    padding: 15px 20px 15px 35px; /* Ajustamos el padding para que el contenido no se pegue al borde */
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    transition: all 0.4s ease-in-out;
-    cursor: pointer; 
-    text-decoration: none;
-    color: black;
-}
-
-.icon-item > i{
-    font-size: 22px;
-    color: rgb(71, 71, 71);
-
-}
- .icon-item:hover{
-    background-color: rgb(216, 209, 209);
-    box-shadow: 0px 0px 5px gray;
-    transform: scale(1.1);
-
-}
-
-.icon-item > span{
-    font-size: 16px;
-
-}
-
-
-.sub-items{
-    margin-top: 5.5em;
-    border-top: 1px solid rgba(228, 220, 220, 0.637);
-    border-bottom: 1px solid rgba(228, 220, 220, 0.637);
-    
-}
-
-
-.sub-items > .icon-item:hover{
-    background-color: rgb(216, 209, 209);
-    box-shadow: 0px 0px 5px gray;
-}
-
-.section-user{
-    display: flex;
-    gap: 20px;
-    padding: 30px 0 0 20px;
-    
-}
-
-.section-user > img{
-    width: 40px;
-
-}
-
-.section-user > .text-user > .welcome-back{
-    font-size: 14px;
-
-}
-
-.section-user > .text-user > .name-user{
-    font-weight: bold;
-    font-size: 19px;
-    color: rgb(71, 71, 71);
-
-}
-
-/* Estilos para los vínculos del menú */
-a.icon-item {
-    text-decoration: none;
-    color: inherit;
-}
-
-a.icon-item.active {
-    background-color: rgb(216, 209, 209);
-    border-left: 4px solid var(--secondary-color);
-}
-
-/* Contenido principal */
-.main-content {
-    margin-left: 16%;
-    padding: 40px;
-}
-
-.main-content h1 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: var(--primary-color);
-}
-
-.main-content p {
-    font-size: 1.1rem;
-    color: #666;
-}
 
 

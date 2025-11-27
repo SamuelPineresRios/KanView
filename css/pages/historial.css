@@ -1,0 +1,135 @@
+/* ===== HISTORIAL DE PEDIDOS ===== */
+
+/* Contenedor principal */
+.historial-container {
+    flex: 1;
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+/* Header */
+.historial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+}
+
+.historial-header h1 {
+    font-size: var(--font-xl);
+    color: var(--primary-color);
+}
+
+/* Filtros */
+.historial-filters {
+    display: flex;
+    gap: var(--spacing-md);
+    background-color: var(--white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.filter-group label {
+    font-size: var(--font-xs);
+    color: var(--text-light);
+}
+
+.filter-group select,
+.filter-group input {
+    padding: var(--spacing-sm);
+    border: 1px solid var(--border-light);
+    border-radius: var(--border-radius-sm);
+    outline: none;
+}
+
+/* Tabla de historial */
+.historial-table {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 2px 8px var(--shadow-color);
+    overflow: hidden;
+}
+
+.historial-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.historial-table th,
+.historial-table td {
+    padding: var(--spacing-md);
+    text-align: left;
+}
+
+.historial-table th {
+    background-color: var(--bg-color);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.historial-table tr {
+    border-bottom: 1px solid var(--border-light);
+}
+
+.historial-table tr:hover {
+    background-color: var(--hover-bg);
+}
+
+/* Status badges */
+.status-badge {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-xs);
+    font-weight: 500;
+}
+
+.status-badge.completado {
+    background-color: rgba(39, 174, 96, 0.2);
+    color: var(--status-green);
+}
+
+.status-badge.en-proceso {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: var(--status-blue);
+}
+
+.status-badge.pendiente {
+    background-color: rgba(230, 126, 34, 0.2);
+    color: var(--status-orange);
+}
+
+.status-badge.cancelado {
+    background-color: rgba(223, 0, 0, 0.2);
+    color: var(--status-red);
+}
+
+/* Paginación */
+.historial-pagination {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+}
+
+.historial-pagination button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--border-light);
+    background-color: var(--white);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+}
+
+.historial-pagination button.active {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-color: var(--secondary-color);
+}

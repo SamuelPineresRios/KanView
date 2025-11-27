@@ -1,0 +1,107 @@
+/* ===== SIDEBAR ===== */
+.side-bar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: var(--white);
+    position: relative;
+}
+
+.main-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-sm);
+}
+
+.side-cuir {
+    display: flex;
+    align-items: center;
+    padding: var(--sidebar-padding);
+    gap: 18px;
+}
+
+.side-cuir > h3 {
+    font-size: var(--font-xl);
+}
+
+.side-cuir > img {
+    width: 45px;
+}
+
+.side-text-principal {
+    font-size: var(--font-sm);
+    color: var(--gray);
+    padding-left: 35px;
+    font-weight: bold;
+}
+
+/* ===== MENU ITEMS ===== */
+.icon-item {
+    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-md) 35px;
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: center;
+    transition: var(--transition-fast);
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.icon-item > i {
+    font-size: var(--sidebar-icon-size);
+    color: var(--text-dark);
+}
+
+.icon-item:hover {
+    background-color: var(--hover-bg);
+    box-shadow: 0px 0px 5px var(--gray);
+    transform: scale(1.1);
+}
+
+.icon-item > span {
+    font-size: var(--font-sm);
+}
+
+/* ===== SUB ITEMS ===== */
+.sub-items {
+    margin-top: 3.3em;
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.sub-items > .icon-item:hover {
+    background-color: var(--hover-bg);
+    box-shadow: 0px 0px 5px var(--gray);
+}
+
+/* ===== USER SECTION ===== */
+.section-user {
+    display: flex;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg) 0 0 var(--spacing-lg);
+}
+
+.section-user > img {
+    width: 40px;
+}
+
+.section-user > .text-user > .welcome-back {
+    font-size: var(--font-xs);
+}
+
+.section-user > .text-user > .name-user {
+    font-weight: bold;
+    font-size: var(--font-md);
+    color: var(--text-dark);
+}
+
+/* ===== LINK STYLES ===== */
+a.icon-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.icon-item.active {
+    background-color: var(--hover-bg);
+    border-left: 4px solid var(--secondary-color);
+}

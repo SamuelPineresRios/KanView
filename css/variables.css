@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Colores principales */
+    --primary-color: #2c3e50;
+    --secondary-color: #e67e22;
+    --text-color: #333;
+    --text-light: #666;
+    --text-dark: rgb(71, 71, 71);
+    --bg-color: #f4f4f4;
+    --white: #ffffff;
+    --black: #000000;
+    
+    /* Colores de estado */
+    --status-orange: #e67e22;
+    --status-blue: #3498db;
+    --status-green: #27ae60;
+    --status-red: rgb(223, 0, 0);
+    
+    /* Colores de UI */
+    --hover-bg: rgb(216, 209, 209);
+    --border-light: rgba(228, 220, 220, 0.637);
+    --shadow-color: rgba(97, 97, 97, 0.616);
+    --shadow-light: rgba(126, 125, 125, 1);
+    --gray: gray;
+    --dark-blue: darkblue;
+    
+    /* Medidas - Sidebar */
+    --sidebar-width: 16%;
+    --sidebar-padding: 25px;
+    --sidebar-icon-size: 22px;
+    
+    /* Medidas - Tipografía */
+    --font-xs: 14px;
+    --font-sm: 16px;
+    --font-md: 19px;
+    --font-lg: 20px;
+    --font-xl: 24px;
+    --font-xxl: 26px;
+    --font-title: 2rem;
+    
+    /* Medidas - Espaciado */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 25px;
+    --spacing-xxl: 30px;
+    
+    /* Medidas - Bordes */
+    --border-radius-sm: 10px;
+    --border-radius-md: 14px;
+    --border-radius-lg: 15px;
+    --border-radius-xl: 18px;
+    --border-radius-round: 50%;
+    
+    /* Medidas - Kanban */
+    --kanban-column-width: 27em;
+    --card-min-height: 45vh;
+    --button-width: 16em;
+    
+    /* Transiciones */
+    --transition-fast: 0.4s ease-in-out;
+}
+
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    overflow: hidden;
+}

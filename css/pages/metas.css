@@ -1,0 +1,154 @@
+/* ===== METAS FINANCIERAS ===== */
+
+/* Contenedor principal */
+.metas-container {
+    flex: 1;
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+/* Header */
+.metas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+}
+
+.metas-header h1 {
+    font-size: var(--font-xl);
+    color: var(--primary-color);
+}
+
+.btn-nueva-meta {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    transition: var(--transition-fast);
+}
+
+.btn-nueva-meta:hover {
+    background-color: #d35400;
+}
+
+/* Grid de metas */
+.metas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+/* Card de meta */
+.meta-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: 0 2px 8px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.meta-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.meta-card-header h3 {
+    font-size: var(--font-md);
+    color: var(--text-color);
+}
+
+.meta-status {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-xs);
+    font-weight: 500;
+}
+
+.meta-status.en-progreso {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: var(--status-blue);
+}
+
+.meta-status.completada {
+    background-color: rgba(39, 174, 96, 0.2);
+    color: var(--status-green);
+}
+
+.meta-status.pendiente {
+    background-color: rgba(230, 126, 34, 0.2);
+    color: var(--status-orange);
+}
+
+.meta-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.meta-current {
+    font-size: var(--font-xl);
+    font-weight: bold;
+    color: var(--status-green);
+}
+
+.meta-target {
+    font-size: var(--font-sm);
+    color: var(--text-light);
+}
+
+/* Barra de progreso de meta */
+.meta-progress {
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+.meta-progress-bar {
+    height: 100%;
+    border-radius: var(--border-radius-lg);
+    transition: width 0.5s ease;
+}
+
+.meta-progress-bar.low {
+    background-color: var(--status-red);
+}
+
+.meta-progress-bar.medium {
+    background-color: var(--status-orange);
+}
+
+.meta-progress-bar.high {
+    background-color: var(--status-green);
+}
+
+.meta-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-xs);
+    color: var(--text-light);
+}
+
+.meta-deadline {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.meta-percentage {
+    font-weight: 600;
+    color: var(--text-color);
+}

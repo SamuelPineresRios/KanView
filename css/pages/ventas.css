@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: var(--spacing-lg);
+    min-height: 100vh;
+}
+
