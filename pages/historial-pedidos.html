@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historial de Pedidos - KanView</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages/historial.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -85,6 +86,144 @@
         </div>
     </div>
 </section>
+
+<main class="dashboard">
+        <header class="dashboard-header">
+            <h1>Historial de Pedidos</h1>
+        </header>
+
+        <section class="stats-cards">
+            <article class="stat-card">
+                <div class="stat-content">
+                    <div class="stat-info">
+                        <span class="stat-label">Pedidos Completados</span>
+                        <span class="stat-number green">3</span>
+                    </div>
+                    <span class="stat-icon green-icon">✓</span>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-content">
+                    <div class="stat-info">
+                        <span class="stat-label">Pedidos Cancelados</span>
+                        <span class="stat-number red">1</span>
+                    </div>
+                    <span class="stat-icon red-icon">✕</span>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-content">
+                    <div class="stat-info">
+                        <span class="stat-label">Ingresos Totales</span>
+                        <span class="stat-number dark">$5,200</span>
+                    </div>
+                    <span class="stat-icon blue-icon">$</span>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-content">
+                    <div class="stat-info">
+                        <span class="stat-label">Promedio por Pedido</span>
+                        <span class="stat-number teal">$1,733</span>
+                    </div>
+                    <span class="stat-icon teal-icon">📊</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="orders-section">
+            <header class="orders-header">
+                <h2>Pedidos Recientes</h2>
+                <div class="orders-actions">
+                    <div class="filter-dropdown">
+                        <span>Todos</span>
+                        <span class="dropdown-arrow">⌄</span>
+                    </div>
+                    <button class="export-btn">
+                        <span class="export-icon">↓</span>
+                        Exportar CSV
+                    </button>
+                </div>
+            </header>
+
+            <ul class="orders-list">
+                <li class="order-item">
+                    <div class="order-info">
+                        <span class="status-dot completed"></span>
+                        <div class="order-details">
+                            <span class="order-name">María González</span>
+                            <span class="order-description">Sofá 3 plazas tapizado</span>
+                        </div>
+                    </div>
+                    <div class="order-meta">
+                        <div class="order-amount">
+                            <span class="amount">$1,200</span>
+                            <span class="date">2024-08-15</span>
+                        </div>
+                        <span class="status-badge completed">completado</span>
+                        <button class="view-btn">👁</button>
+                    </div>
+                </li>
+
+                <li class="order-item">
+                    <div class="order-info">
+                        <span class="status-dot completed"></span>
+                        <div class="order-details">
+                            <span class="order-name">Hotel Plaza</span>
+                            <span class="order-description">Sillones lobby</span>
+                        </div>
+                    </div>
+                    <div class="order-meta">
+                        <div class="order-amount">
+                            <span class="amount">$2,500</span>
+                            <span class="date">2024-08-10</span>
+                        </div>
+                        <span class="status-badge completed">completado</span>
+                        <button class="view-btn">👁</button>
+                    </div>
+                </li>
+
+                <li class="order-item">
+                    <div class="order-info">
+                        <span class="status-dot cancelled"></span>
+                        <div class="order-details">
+                            <span class="order-name">Ana Rodríguez</span>
+                            <span class="order-description">Sillas comedor</span>
+                        </div>
+                    </div>
+                    <div class="order-meta">
+                        <div class="order-amount">
+                            <span class="amount">$800</span>
+                            <span class="date">2024-08-05</span>
+                        </div>
+                        <span class="status-badge cancelled">cancelado</span>
+                        <button class="view-btn">👁</button>
+                    </div>
+                </li>
+
+                <li class="order-item">
+                    <div class="order-info">
+                        <span class="status-dot completed"></span>
+                        <div class="order-details">
+                            <span class="order-name">Carlos Mendoza</span>
+                            <span class="order-description">Restauración sofá vintage</span>
+                        </div>
+                    </div>
+                    <div class="order-meta">
+                        <div class="order-amount">
+                            <span class="amount">$1,500</span>
+                            <span class="date">2024-07-28</span>
+                        </div>
+                        <span class="status-badge completed">completado</span>
+                        <button class="view-btn">👁</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
 
 
     
