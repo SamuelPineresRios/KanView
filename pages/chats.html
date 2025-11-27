@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chats - KanView</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/KanView/css/pages/chats.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -86,7 +87,109 @@
     </div>
 </section>
 
+<div class="chat-container">
+        
+        <div class="chat-list">
+            <h2>Chats</h2>
+            <div class="search-wrapper">
+                 <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                 <input type="text" placeholder="Buscar chat o iniciar uno nuevo" class="chat-search">
+            </div>
 
+            <div class="chat-item active-list-item"> 
+                <div class="chat-avatar">👤</div>
+                <div class="chat-info">
+                    <span class="chat-name">Mariana González</span>
+                    <span class="chat-message">¿Cuándo pueden venir a medir el sofá?</span>
+                </div>
+                <div class="chat-meta">14:45 PM<span class="unread-count">2</span></div>
+            </div>
+
+            <div class="chat-item">
+                <div class="chat-avatar">🏨</div>
+                <div class="chat-info">
+                    <span class="chat-name">Hotel Plaza</span>
+                    <span class="chat-message">¿Qué tipo de telas tienes disponibles?</span>
+                </div>
+                <div class="chat-meta">13:10 PM<span class="unread-count">3</span></div>
+            </div>
+            
+            <div class="chat-item">
+                <div class="chat-avatar">R</div>
+                <div class="chat-info">
+                    <span class="chat-name">Restaurantes Mystic</span>
+                    <span class="chat-message">Quisiera saber si tienen tela para muebles...</span>
+                </div>
+                <div class="chat-meta">11:56 AM<span class="unread-count">2</span></div>
+            </div>
+            
+            <div class="chat-item">
+                <div class="chat-avatar">W</div>
+                <div class="chat-info">
+                    <span class="chat-name">Wilmar Clavijo</span>
+                    <span class="chat-message"><svg class="read-check" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Muchas gracias por mostrar el estado de ...</span>
+                </div>
+                <div class="chat-meta">10:15 AM<span class="unread-count">1</span></div>
+            </div>
+             <div class="chat-item">
+                <div class="chat-avatar">T</div>
+                <div class="chat-info">
+                    <span class="chat-name">Thomas Velasquez</span>
+                    <span class="chat-message"><svg class="read-check" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Allí podrás observar el catálogo comple ...</span>
+                </div>
+                <div class="chat-meta">9:20 AM</div>
+            </div>
+             <div class="chat-item">
+                <div class="chat-avatar">V</div>
+                <div class="chat-info">
+                    <span class="chat-name">Valery Rivera</span>
+                    <span class="chat-message"><svg class="read-check" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Claro, tenemos diferentes telas disponi...</span>
+                </div>
+                <div class="chat-meta">9:09 AM</div>
+            </div>
+             <div class="chat-item">
+                <div class="chat-avatar">C</div>
+                <div class="chat-info">
+                    <span class="chat-name">Camilo Perez</span>
+                    <span class="chat-message"><svg class="read-check" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Si señor, su pedido ya está en manos ...</span>
+                </div>
+                <div class="chat-meta">8:40 AM</div>
+            </div>
+            
+        </div>
+
+        <div class="chat-window">
+            
+            <div class="chat-header-display">
+                <div class="chat-avatar">O</div>
+                <span class="chat-name-display">Mariana González</span>
+            </div>
+            
+            <div class="chat-content">
+                <div class="date-separator">HOY</div>
+                
+                <div class="chat-message-bubble received">
+                    <p>Mariana González</p>
+                    <p>Buenas tardes.</p>
+                    <span class="chat-time">14:45 PM</span>
+                </div>
+                <div class="chat-message-bubble received">
+                    <p>¿Cuándo pueden venir a medir el sofá?</p>
+                    <span class="chat-time">14:45 PM</span>
+                </div>
+                <div class="typing-indicator">...</div> 
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" placeholder="Escribe tu mensaje..." id="messageInput">
+                <button class="send-button">Enviar</button>
+            </div>
+            
+        </div>
+    </div>
     
+    </body>
+    <script src="/KanView/js/chat.js"></script>
+       
 </body>
 </html>
