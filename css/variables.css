@@ -10,6 +10,8 @@
     --bg-color: #f4f4f4;
     --white: #ffffff;
     --black: #000000;
+    --blue: rgb(0, 0, 89);
+    --light-blue: rgb(95, 172, 239);
     
     /* Colores de estado */
     --status-orange: #e67e22;
@@ -46,6 +48,7 @@
     --spacing-lg: 20px;
     --spacing-xl: 25px;
     --spacing-xxl: 30px;
+    --spacing-cards: 130px;
     
     /* Medidas - Bordes */
     --border-radius-sm: 10px;
@@ -76,5 +79,4 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     display: flex;
-    overflow: hidden;
 }
