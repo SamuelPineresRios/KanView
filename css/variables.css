@@ -16,16 +16,27 @@
     /* Colores de estado */
     --status-orange: #e67e22;
     --status-blue: #3498db;
-    --status-green: #27ae60;
+    --status-green: #10b981;
     --status-red: rgb(223, 0, 0);
+    --status-purple: #8b5cf6;
+    --status-danger: #ef4444;
     
     /* Colores de UI */
     --hover-bg: rgb(216, 209, 209);
     --border-light: rgba(228, 220, 220, 0.637);
+    --border-color: #e5e7eb;
     --shadow-color: rgba(97, 97, 97, 0.616);
     --shadow-light: rgba(126, 125, 125, 1);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --gray: gray;
     --dark-blue: darkblue;
+    
+    /* Colores de cards/stats */
+    --color-primary: #3b82f6;
+    --color-secondary: #10b981;
+    --color-tertiary: #8b5cf6;
+    --color-quaternary: #f97316;
     
     /* Medidas - Sidebar */
     --sidebar-width: 16%;
@@ -56,6 +67,7 @@
     --border-radius-lg: 15px;
     --border-radius-xl: 18px;
     --border-radius-round: 50%;
+    --border-radius: 0.75rem;
     
     /* Medidas - Kanban */
     --kanban-column-width: 27em;

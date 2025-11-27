@@ -87,9 +87,155 @@
     </div>
 </section>
 
+<main class="dashboard">
+        <h1 class="dashboard__title">Ventas por canal</h1>
+        
+        <!-- Tarjetas de estadísticas -->
+        <section class="stats-grid">
+            <article class="stat-card">
+                <div class="stat-card__header">
+                    <div class="stat-card__icon stat-card__icon--blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h2 class="stat-card__label">Clientes directos</h2>
+                </div>
+                <p class="stat-card__percentage stat-card__percentage--blue">65%</p>
+                <p class="stat-card__amount">$5,525</p>
+                <div class="stat-card__trend stat-card__trend--positive">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 12L8 4M8 4L4 8M8 4L12 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>+8%</span>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-card__header">
+                    <div class="stat-card__icon stat-card__icon--green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 11C17.66 11 18.99 9.66 18.99 8C18.99 6.34 17.66 5 16 5C14.34 5 13 6.34 13 8C13 9.66 14.34 11 16 11ZM8 11C9.66 11 10.99 9.66 10.99 8C10.99 6.34 9.66 5 8 5C6.34 5 5 6.34 5 8C5 9.66 6.34 11 8 11ZM8 13C5.67 13 1 14.17 1 16.5V19H15V16.5C15 14.17 10.33 13 8 13ZM16 13C15.71 13 15.38 13.02 15.03 13.05C16.19 13.89 17 15.02 17 16.5V19H23V16.5C23 14.17 18.33 13 16 13Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h2 class="stat-card__label">Referencias</h2>
+                </div>
+                <p class="stat-card__percentage stat-card__percentage--green">65%</p>
+                <p class="stat-card__amount">$5,525</p>
+                <div class="stat-card__trend stat-card__trend--positive">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 12L8 4M8 4L4 8M8 4L12 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>+8%</span>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-card__header">
+                    <div class="stat-card__icon stat-card__icon--purple">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12C9 11.76 8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5C21 3.34 19.66 2 18 2C16.34 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12C3 13.66 4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.35C15.11 18.56 15.08 18.78 15.08 19C15.08 20.61 16.39 21.92 18 21.92C19.61 21.92 20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h2 class="stat-card__label">Redes sociales</h2>
+                </div>
+                <p class="stat-card__percentage stat-card__percentage--purple">65%</p>
+                <p class="stat-card__amount">$5,525</p>
+                <div class="stat-card__trend stat-card__trend--negative">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 4L8 12M8 12L12 8M8 12L4 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>-8%</span>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-card__header">
+                    <div class="stat-card__icon stat-card__icon--orange">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h2 class="stat-card__label">Otros canales</h2>
+                </div>
+                <p class="stat-card__percentage stat-card__percentage--orange">65%</p>
+                <p class="stat-card__amount">$5,525</p>
+                <div class="stat-card__trend stat-card__trend--positive">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 12L8 4M8 4L4 8M8 4L12 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>+8%</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- Gráficos inferiores -->
+        <section class="charts-grid">
+            <article class="chart-card">
+                <h2 class="chart-card__title">Rendimiento por canal</h2>
+                <div class="performance-chart">
+                    <div class="performance-chart__item">
+                        <span class="performance-chart__label">Clientes directos</span>
+                        <div class="performance-chart__bar-container">
+                            <div class="performance-chart__bar performance-chart__bar--primary" style="width: 75%"></div>
+                            <div class="performance-chart__bar performance-chart__bar--light" style="width: 25%"></div>
+                        </div>
+                        <span class="performance-chart__value">75%</span>
+                    </div>
+                    <div class="performance-chart__item">
+                        <span class="performance-chart__label">Referencias</span>
+                        <div class="performance-chart__bar-container">
+                            <div class="performance-chart__bar performance-chart__bar--secondary" style="width: 15%"></div>
+                            <div class="performance-chart__bar performance-chart__bar--light" style="width: 85%"></div>
+                        </div>
+                        <span class="performance-chart__value">15%</span>
+                    </div>
+                    <div class="performance-chart__item">
+                        <span class="performance-chart__label">Redes sociales</span>
+                        <div class="performance-chart__bar-container">
+                            <div class="performance-chart__bar performance-chart__bar--tertiary" style="width: 50%"></div>
+                            <div class="performance-chart__bar performance-chart__bar--light" style="width: 50%"></div>
+                        </div>
+                        <span class="performance-chart__value">50%</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="chart-card">
+                <h2 class="chart-card__title">Métricas claves</h2>
+                <div class="metrics">
+                    <div class="metric-item metric-item--success">
+                        <div class="metric-item__header">
+                            <h3 class="metric-item__title">Meta de Ingresos</h3>
+                            <span class="metric-item__badge">$500</span>
+                        </div>
+                        <p class="metric-item__status">85% completado</p>
+                        <div class="metric-item__progress">
+                            <div class="metric-item__progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="metric-item metric-item--pending">
+                        <div class="metric-item__header">
+                            <h3 class="metric-item__title">Meta de Calidad</h3>
+                            <span class="metric-item__badge metric-item__badge--outlined">$300</span>
+                        </div>
+                        <p class="metric-item__status">Pendiente</p>
+                        <div class="metric-item__progress">
+                            <div class="metric-item__progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 
 
 
+
+
+    <script src="script.js"></script>
     
 </body>
 </html>

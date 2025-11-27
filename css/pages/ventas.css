@@ -1,5 +1,315 @@
+/* ===== VENTAS POR CANAL ===== */
 
+/* Container principal */
+.container {
+    width: 100%;
+    padding: var(--spacing-xl);
+}
 
+/* Dashboard principal */
+.dashboard {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
 
+.dashboard__title {
+    font-size: var(--font-title);
+    font-weight: 700;
+    margin-bottom: var(--spacing-xl);
+    color: var(--text-color);
+}
 
+/* Grid de estadísticas */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
 
+/* Tarjeta de estadística */
+.stat-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.stat-card__header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.stat-card__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border-radius-round);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stat-card__icon--blue {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: var(--color-primary);
+}
+
+.stat-card__icon--green {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--color-secondary);
+}
+
+.stat-card__icon--purple {
+    background-color: rgba(139, 92, 246, 0.1);
+    color: var(--color-tertiary);
+}
+
+.stat-card__icon--orange {
+    background-color: rgba(249, 115, 22, 0.1);
+    color: var(--color-quaternary);
+}
+
+.stat-card__label {
+    font-size: var(--font-xs);
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.stat-card__percentage {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-card__percentage--blue {
+    color: var(--color-primary);
+}
+
+.stat-card__percentage--green {
+    color: var(--color-secondary);
+}
+
+.stat-card__percentage--purple {
+    color: var(--color-tertiary);
+}
+
+.stat-card__percentage--orange {
+    color: var(--color-quaternary);
+}
+
+.stat-card__amount {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.stat-card__trend {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: var(--font-xs);
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+}
+
+.stat-card__trend--positive {
+    color: var(--color-secondary);
+    background-color: rgba(16, 185, 129, 0.1);
+}
+
+.stat-card__trend--negative {
+    color: var(--status-danger);
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+/* Grid de gráficos */
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.chart-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+}
+
+.chart-card__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-color);
+}
+
+/* Gráfico de rendimiento */
+.performance-chart {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.performance-chart__item {
+    display: grid;
+    grid-template-columns: 140px 1fr auto;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.performance-chart__label {
+    font-size: var(--font-xs);
+    color: var(--text-light);
+}
+
+.performance-chart__bar-container {
+    display: flex;
+    height: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.performance-chart__bar {
+    height: 100%;
+    transition: width 0.6s ease;
+}
+
+.performance-chart__bar--primary {
+    background-color: var(--color-secondary);
+}
+
+.performance-chart__bar--secondary {
+    background-color: var(--color-secondary);
+}
+
+.performance-chart__bar--tertiary {
+    background-color: var(--color-secondary);
+}
+
+.performance-chart__bar--light {
+    background-color: rgba(16, 185, 129, 0.15);
+}
+
+.performance-chart__value {
+    font-size: var(--font-xs);
+    font-weight: 600;
+    color: var(--text-color);
+    min-width: 40px;
+    text-align: right;
+}
+
+/* Métricas */
+.metrics {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.metric-item {
+    padding: var(--spacing-md);
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.metric-item--success {
+    background-color: rgba(16, 185, 129, 0.08);
+}
+
+.metric-item--pending {
+    background-color: var(--bg-color);
+}
+
+.metric-item__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xs);
+}
+
+.metric-item__title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.metric-item__badge {
+    font-size: var(--font-xs);
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.375rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: var(--white);
+}
+
+.metric-item__badge--outlined {
+    background-color: transparent;
+    border: 1px solid var(--text-light);
+    color: var(--text-color);
+}
+
+.metric-item__status {
+    font-size: var(--font-xs);
+    color: var(--text-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.metric-item__progress {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.metric-item__progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-secondary) 0%, #34d399 100%);
+    border-radius: 4px;
+    transition: width 0.6s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: var(--spacing-md);
+    }
+
+    .dashboard__title {
+        font-size: 1.5rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .performance-chart__item {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .performance-chart__value {
+        text-align: left;
+    }
+
+    .stat-card__percentage {
+        font-size: 2rem;
+    }
+}
