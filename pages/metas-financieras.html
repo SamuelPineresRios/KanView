@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metas Financieras - KanView</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/pages/metas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -38,11 +39,6 @@
                 <span>Ventas por canal</span>
             </a>
 
-            <a href="grupos.html" class="icon-item">
-                <i class="fa-solid fa-users"></i>
-                <span>Grupos</span>
-            </a>
-
             <a href="camaras.html" class="icon-item">
                 <i class="fa-solid fa-camera"></i>
                 <span>Cámaras</span>
@@ -61,6 +57,7 @@
     </div>
 
     <div class="sub-items">
+        <p class="side-text-otros">OTROS</p>
         <a href="ajustes.html" class="icon-item">
             <i class="fa-solid fa-gear"></i>
             <span>Ajustes</span>
@@ -85,6 +82,108 @@
         </div>
     </div>
 </section>
+
+
+<div class="metas-container">
+    
+    <div class="metas-header">
+        <h1>Metas Financieras</h1>
+        <button class="btn-nueva-meta">
+            <i class="icon-plus"></i>
+            Nueva Meta
+        </button>
+    </div>
+
+    
+    <div class="metas-grid">
+      
+        <div class="meta-card">
+            <div class="meta-card-header">
+                <h3>Ahorro mensual</h3>
+                <span class="meta-status en-progreso">En Progreso</span>
+            </div>
+            <div class="meta-amount">
+                <span class="meta-current">$3,500</span>
+                <span class="meta-target">de $5,000</span>
+            </div>
+            <div class="meta-progress">
+                <div class="meta-progress-bar high" style="width: 70%;"></div>
+            </div>
+            <div class="meta-footer">
+                <div class="meta-deadline">
+                    <i class="icon-calendar"></i>
+                    <span>Vence: 31 Dic 2025</span>
+                </div>
+                <span class="meta-percentage">70%</span>
+            </div>
+        </div>
+
+       
+        <div class="meta-card">
+            <div class="meta-card-header">
+                <h3>Fondo de emergencia</h3>
+                <span class="meta-status completada">Completada</span>
+            </div>
+            <div class="meta-amount">
+                <span class="meta-current">$10,000</span>
+                <span class="meta-target">de $10,000</span>
+            </div>
+            <div class="meta-progress">
+                <div class="meta-progress-bar high" style="width: 100%;"></div>
+            </div>
+            <div class="meta-footer">
+                <div class="meta-deadline">
+                    <i class="icon-calendar"></i>
+                    <span>Completada</span>
+                </div>
+                <span class="meta-percentage">100%</span>
+            </div>
+        </div>
+
+        <div class="meta-card">
+            <div class="meta-card-header">
+                <h3>Inversión inicial</h3>
+                <span class="meta-status pendiente">Pendiente</span>
+            </div>
+            <div class="meta-amount">
+                <span class="meta-current">$500</span>
+                <span class="meta-target">de $2,000</span>
+            </div>
+            <div class="meta-progress">
+                <div class="meta-progress-bar low" style="width: 25%;"></div>
+            </div>
+            <div class="meta-footer">
+                <div class="meta-deadline">
+                    <i class="icon-calendar"></i>
+                    <span>Vence: 15 Ene 2026</span>
+                </div>
+                <span class="meta-percentage">25%</span>
+            </div>
+        </div>
+
+   
+        <div class="meta-card">
+            <div class="meta-card-header">
+                <h3>Vacaciones</h3>
+                <span class="meta-status en-progreso">En Progreso</span>
+            </div>
+            <div class="meta-amount">
+                <span class="meta-current">$1,800</span>
+                <span class="meta-target">de $4,000</span>
+            </div>
+            <div class="meta-progress">
+                <div class="meta-progress-bar medium" style="width: 45%;"></div>
+            </div>
+            <div class="meta-footer">
+                <div class="meta-deadline">
+                    <i class="icon-calendar"></i>
+                    <span>Vence: 01 Mar 2026</span>
+                </div>
+                <span class="meta-percentage">45%</span>
+            </div>
+        </div>
+    </div>
+</div>
 
 
     

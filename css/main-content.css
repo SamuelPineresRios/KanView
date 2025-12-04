@@ -1,10 +1,22 @@
 /* ===== MAIN CONTENT (Para páginas internas) ===== */
-.main-content {
+.main-content,
+.dashboard,
+.chat-container,
+.metas-container {
     margin-left: var(--sidebar-width);
-    padding: 40px;
+    padding: 30px 40px;
+    min-height: 100vh;
+    background-color: #f8fafc;
 }
 
-.main-content h1 {
+/* Ajuste para kanban board */
+.kanban-board {
+    margin-left: var(--sidebar-width);
+}
+
+.main-content h1,
+.dashboard h1,
+.dashboard__title {
     font-size: var(--font-title);
     margin-bottom: var(--spacing-md);
     color: var(--primary-color);

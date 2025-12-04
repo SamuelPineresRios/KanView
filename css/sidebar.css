@@ -2,106 +2,217 @@
 .side-bar {
     width: var(--sidebar-width);
     height: 100vh;
-    background-color: var(--white);
-    position: relative;
-}
-
-.main-items {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    position: fixed;
+    left: 0;
+    top: 0;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-sm);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.08);
+    z-index: 100;
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
 }
 
+/* ===== LOGO SECTION ===== */
 .side-cuir {
     display: flex;
     align-items: center;
-    padding: var(--sidebar-padding);
-    gap: 18px;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    gap: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin-bottom: var(--spacing-md);
 }
 
 .side-cuir > h3 {
-    font-size: var(--font-xl);
+    font-size: var(--font-lg);
+    color: #1a1f2e;
+    font-weight: 600;
+    letter-spacing: 0.3px;
 }
 
 .side-cuir > img {
-    width: 45px;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== MAIN ITEMS ===== */
+.main-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    flex: 1;
+    padding: 0 var(--spacing-sm);
 }
 
 .side-text-principal {
-    font-size: var(--font-sm);
-    color: var(--gray);
-    padding-left: 35px;
-    font-weight: bold;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.45);
+    padding-left: var(--spacing-md);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-xs);
+}
+
+.side-items-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 /* ===== MENU ITEMS ===== */
 .icon-item {
-    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-md) 35px;
+    padding: 12px 16px;
     display: flex;
-    gap: var(--spacing-lg);
+    gap: 14px;
     align-items: center;
-    transition: var(--transition-fast);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     text-decoration: none;
-    color: var(--black);
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 0 4px;
+    position: relative;
 }
 
 .icon-item > i {
-    font-size: var(--sidebar-icon-size);
-    color: var(--text-dark);
-}
-
-.icon-item:hover {
-    background-color: var(--hover-bg);
-    box-shadow: 0px 0px 5px var(--gray);
-    transform: scale(1.1);
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+    width: 22px;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 .icon-item > span {
-    font-size: var(--font-sm);
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
-/* ===== SUB ITEMS ===== */
-.sub-items {
-    margin-top: 3.3em;
-    border-top: 1px solid var(--border-light);
-    border-bottom: 1px solid var(--border-light);
+.icon-item:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: #1a1f2e;
+    transform: translateX(4px);
 }
 
-.sub-items > .icon-item:hover {
-    background-color: var(--hover-bg);
-    box-shadow: 0px 0px 5px var(--gray);
+.icon-item:hover > i {
+    color: var(--secondary-color);
 }
 
-/* ===== USER SECTION ===== */
-.section-user {
-    display: flex;
-    gap: var(--spacing-lg);
-    padding: var(--spacing-lg) 0 0 var(--spacing-lg);
-}
-
-.section-user > img {
-    width: 40px;
-}
-
-.section-user > .text-user > .welcome-back {
-    font-size: var(--font-xs);
-}
-
-.section-user > .text-user > .name-user {
-    font-weight: bold;
-    font-size: var(--font-md);
-    color: var(--text-dark);
-}
-
-/* ===== LINK STYLES ===== */
+/* ===== ACTIVE STATE ===== */
 a.icon-item {
     text-decoration: none;
     color: inherit;
 }
 
 a.icon-item.active {
-    background-color: var(--hover-bg);
-    border-left: 4px solid var(--secondary-color);
+    background: linear-gradient(135deg, rgba(230, 126, 34, 0.15) 0%, rgba(230, 126, 34, 0.08) 100%);
+    color: #1a1f2e;
+    border-left: none;
+    position: relative;
+}
+
+a.icon-item.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 60%;
+    background: linear-gradient(180deg, var(--secondary-color) 0%, #f39c12 100%);
+    border-radius: 0 4px 4px 0;
+}
+
+a.icon-item.active > i {
+    color: var(--secondary-color);
+}
+
+/* ===== SUB ITEMS ===== */
+.sub-items {
+    margin-top: auto;
+    padding: var(--spacing-md) var(--spacing-sm);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.side-text-otros {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.45);
+    padding-left: var(--spacing-md);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-xs);
+}
+
+.sub-items > .icon-item {
+    padding: 10px 16px;
+}
+
+.sub-items > .icon-item > i {
+    font-size: 16px;
+}
+
+.sub-items > .icon-item > span {
+    font-size: 13px;
+}
+
+/* ===== USER SECTION ===== */
+.section-user {
+    display: flex;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: rgba(0, 0, 0, 0.03);
+    margin: var(--spacing-sm);
+    border-radius: 12px;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.section-user:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.section-user > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid rgba(230, 126, 34, 0.3);
+}
+
+.section-user > .text-user > .welcome-back {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 2px;
+}
+
+.section-user > .text-user > .name-user {
+    font-weight: 600;
+    font-size: 14px;
+    color: #1a1f2e;
+}
+
+/* ===== SCROLLBAR ===== */
+.side-bar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.side-bar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.side-bar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.side-bar::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.25);
 }
